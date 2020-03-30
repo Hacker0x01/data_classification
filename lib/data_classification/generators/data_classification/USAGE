@@ -1,0 +1,8 @@
+Description:
+    Generate a migration to set the data classification of a table column.
+
+Example:
+    rails generate data_classification:create reports:vulnerability_information:confidential reports:title:confidential
+
+    This will create:
+        Migrations: db/migrate/{timestamp}_create_data_classification_for_{table_names}.rb

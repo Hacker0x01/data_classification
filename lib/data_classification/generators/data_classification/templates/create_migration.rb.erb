@@ -1,0 +1,15 @@
+# frozen_string_literal: true
+
+class <%= migration_class_name %> < ActiveRecord::Migration[5.2]
+  include DataClassification::Migration
+
+  def up
+    <%- @table_classifications.each do |table, column, classification | -%>
+    add_data_classification '<%= table %>', '<%= column %>', '<%= classification %>'
+    <%- end -%>
+  end
+
+  def down
+    fail ActiveRecord::IrreversibleMigration
+  end
+end

@@ -4,7 +4,6 @@ require "data_classification/generators/data_classification/create_generator"
 
 module DataClassification
   require 'data_classification/railtie' if defined?(Rails)
-  class Error < StandardError; end
 
   DATA_CLASSIFICATIONS = [
     PUBLIC = :public,

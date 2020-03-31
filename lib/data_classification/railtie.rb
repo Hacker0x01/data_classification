@@ -1,3 +1,5 @@
+require "rails/railtie"
+
 module DataClassifification
   class Railtie < Rails::Railtie
     railtie_name :data_classification

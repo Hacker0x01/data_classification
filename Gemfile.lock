@@ -81,7 +81,7 @@ GEM
     rspec-support (3.9.2)
     thor (1.0.1)
     thread_safe (0.3.6)
-    tzinfo (1.2.6)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     zeitwerk (2.3.0)
 
